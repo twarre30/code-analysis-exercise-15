@@ -35,4 +35,3 @@ function (person, petName){
 * Contains a plausible collection of test cases
 * Outputs are accurately derived from inputs
 * Summary is plausible
-  * Official answer is that it searches for a person's dog by name in a list of their dogs.
