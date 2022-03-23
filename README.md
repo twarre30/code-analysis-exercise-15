@@ -42,31 +42,41 @@ Inputs and outputs should be valid JavaScript values!
 
 | Inputs | Outputs |
 | :---: | :---: |
-| Tiffany, Elsa | dog |
-| Emily, Maui | dog |
-| Kevan, Jasmine | dog |
+| Elsa | dog |
+| Maui | dog |
+| Annie | undefined |
 
 
 
-## Tiffany and Elsa
+## Elsa
 
 ```js
 
-function (person, petName){			// Tiffany, Elsa
-  for (let dog of person.dogs){			// Tiffany.dogs			
-    if (dog.name === petName){			// Elsa === Elsa		
+const person {
+	dogs: ["Elsa", "Maui", "Jasmine"],
+	cats: ["Annie", "Carly"],
+}
+
+function (person, petName){			// Elsa
+  for (let dog of person.dogs){			// person.dogs			
+    if (dog.name === petName){			// Elsa === Elsa 		
       return dog				// dog
     }
   }
 }
 
 ``` 
-## Emily and Maui
+## Maui
 
 ```js
 
-function (person, petName){                     // Emily, Maui
-  for (let dog of person.dogs){                 // Emily.dogs
+const person {
+        dogs: ["Elsa", "Maui", "Jasmine"],
+        cats: ["Annie", "Carly"],
+}
+
+function (person, petName){                     // Maui
+  for (let dog of person.dogs){                 // person.dogs
     if (dog.name === petName){                  // Maui === Maui
       return dog                                // dog
     }
@@ -75,14 +85,19 @@ function (person, petName){                     // Emily, Maui
 
 ```
 
-## Kevan and Jasmine
+## Annie
 
 ```js
 
-function (person, petName){                     // Kevan, Jasmine
-  for (let dog of person.dogs){                 // Kevan.dogs
-    if (dog.name === petName){                  // Jasmine === Jasmine
-      return dog                                // dog
+const person {
+        dogs: ["Elsa", "Maui", "Jasmine"],
+        cats: ["Annie", "Carly"],
+}
+
+function (person, petName){                     // Annie
+  for (let dog of person.dogs){                 // person.dogs
+    if (dog.name === petName){                  // dog.name === Annie
+      return dog                                // undefined
     }
   }
 }
