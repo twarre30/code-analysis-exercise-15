@@ -21,9 +21,9 @@ Inputs and outputs should be valid JavaScript values!
 
 | Input | Output |
 | :---: | :---: |
-|const person { dogs:[Elsa], petName:"Elsa" } | dog | 
-|const person { dogs:[Maui], petName:"Maui" } | dog | 
-|const person { cats:[Annie], petName:"Annie" } | undefined | 
+|[Elsa] | {Elsa} |  
+|[Maui] | {Maui} |  
+|[Annie] | undefined | 
 
 <table>
   <tr>
