@@ -21,9 +21,9 @@ Inputs and outputs should be valid JavaScript values!
 
 | Input | Output |
 | :---: | :---: |
-|person.Tiffany = {dog:"Elsa"}, "Winnie" | {name:"Elsa",} |  
-|person: Emily = {dog:"Maui"}, "Maui" | {name:"Maui",} |  
-|person: Tiffany = {cat:"Annie"}, "Annie" | undefined | 
+|{name: Tiffany, dog:"Elsa"}, "Elsa" | `Elsa` |  
+|{name: Emily, dog:"Maui"}, "Maui" | `Maui` |  
+|{name: Tiffany, cat:"Annie"}, "Annie" | `undefined` | 
 
 <table>
   <tr>
